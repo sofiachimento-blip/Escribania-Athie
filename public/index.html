@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escribanía Notarial | Servicios Jurídicos y Notariales</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { 800: '#0d1b2a', 900: '#0b132b' },
+                        gold: { 500: '#c5a059', 600: '#b08d46' }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Header / Navbar (Sin accesos administrativos) -->
+    <header class="bg-navy-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-scale-balanced text-gold-500 text-3xl"></i>
+                <div>
+                    <span class="text-xl font-serif tracking-wide block">ESCRIBANÍA</span>
+                    <span class="text-xs text-gold-500 tracking-widest uppercase">Registro Notarial</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#servicios" class="hover:text-gold-500 transition">Servicios</a>
+                <a href="#calculadora" class="hover:text-gold-500 transition">Calculadora</a>
+                <a href="#turnos" class="hover:text-gold-500 transition">Solicitar Turno</a>
+            </nav>
+            <div>
+                <a href="#turnos" class="bg-gold-500 text-navy-900 px-5 py-2.5 rounded text-sm font-semibold hover:bg-gold-600 transition shadow">
+                    Agendar Cita
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-navy-900 via-navy-800 to-gray-900 text-white py-24 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <span class="text-gold-500 uppercase tracking-widest text-xs font-semibold block mb-3">Seguridad y Confianza Jurídica</span>
+            <h1 class="text-4xl sm:text-5xl font-serif mb-6 leading-tight">Soluciones Notariales con Rigor y Transparencia</h1>
+            <p class="text-gray-300 text-base sm:text-lg mb-10 leading-relaxed">Asesoramiento integral en escrituras, poderes, testamentos, contratos y certificaciones con trayectoria profesional garantizada.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#turnos" class="bg-gold-500 text-navy-900 font-semibold px-8 py-3.5 rounded hover:bg-gold-600 transition shadow-lg">Pedir Turno Online</a>
+                <a href="#servicios" class="border border-white/30 text-white px-8 py-3.5 rounded hover:bg-white/10 transition">Ver Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Notariales -->
+    <section id="servicios" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-serif text-navy-900 mb-2">Áreas de Práctica</h2>
+            <div class="w-16 h-1 bg-gold-500 mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-gold-500/10 text-gold-600 rounded flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <h3 class="text-xl font-serif mb-3 text-navy-900">Derecho Inmobiliario</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">Compraventas, donaciones, hipotecas, reglamentos de copropiedad y estudios de títulos preventivos.</p>
+                <a href="#turnos" class="text-gold-600 text-sm font-semibold hover:underline inline-flex items-center gap-1">Consultar por trámite <i class="fa-solid fa-arrow-right text-xs"></i></a>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-gold-500/10 text-gold-600 rounded flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-file-contract"></i>
+                </div>
+                <h3 class="text-xl font-serif mb-3 text-navy-900">Sociedades y Contratos</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">Constitución de SRL y SA, actas de directorio, transferencias de fondo de comercio y contratos comerciales.</p>
+                <a href="#turnos" class="text-gold-600 text-sm font-semibold hover:underline inline-flex items-center gap-1">Consultar por trámite <i class="fa-solid fa-arrow-right text-xs"></i></a>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-gold-500/10 text-gold-600 rounded flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-user-shield"></i>
+                </div>
+                <h3 class="text-xl font-serif mb-3 text-navy-900">Poderes y Actas</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">Poderes generales y especiales, autorizaciones de manejo, actas de constatación y notificaciones fehacientes.</p>
+                <a href="#turnos" class="text-gold-600 text-sm font-semibold hover:underline inline-flex items-center gap-1">Consultar por trámite <i class="fa-solid fa-arrow-right text-xs"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora Notarial Interactiva -->
+    <section id="calculadora" class="bg-navy-900 text-white py-20 px-4">
+        <div class="max-w-xl mx-auto bg-white text-gray-800 p-8 rounded-xl shadow-2xl">
+            <h3 class="text-2xl font-serif text-navy-900 mb-2 text-center">Simulador Orientativo de Aranceles</h3>
+            <p class="text-xs text-gray-500 text-center mb-6">Estimación basada en valores de mercado orientativos.</p>
+            
+            <div class="space-y-4 mb-6">
+                <div>
+                    <label class="block text-sm font-medium mb-1 text-gray-700">Tipo de Trámite</label>
+                    <select id="tipoTramite" class="w-full border border-gray-300 rounded p-2.5 text-sm bg-gray-50 focus:outline-none focus:border-gold-500">
+                        <option value="escritura">Escritura Compraventa Inmobiliaria</option>
+                        <option value="poder">Poder Especial / General</option>
+                        <option value="certificacion">Certificación de Firmas</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-1 text-gray-700">Valuación Fiscal / Monto del Acto ($)</label>
+                    <input type="number" id="montoActo" value="5000000" class="w-full border border-gray-300 rounded p-2.5 text-sm bg-gray-50 focus:outline-none focus:border-gold-500">
+                </div>
+                <button onclick="calcularArancel()" class="w-full bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold p-3 rounded transition text-sm">Calcular Estimación</button>
+            </div>
+
+            <div id="resultadoCalculo" class="hidden bg-gray-50 p-4 rounded border border-gray-200 text-center">
+                <span class="text-xs uppercase text-gray-500 block">Honorarios y Gastos Estimados</span>
+                <span id="montoTotal" class="text-2xl font-serif text-navy-900 font-bold"></span>
+                <p class="text-[11px] text-gray-400 mt-1">*Sujeto a aportes previsionales y tasas vigentes de ley.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Turnos -->
+    <section id="turnos" class="py-20 max-w-3xl mx-auto px-4">
+        <div class="bg-white p-8 sm:p-10 rounded-xl shadow-md border border-gray-100">
+            <h3 class="text-2xl font-serif text-navy-900 mb-2 text-center">Reserva de Turno Online</h3>
+            <p class="text-gray-600 text-sm text-center mb-8">Complete los datos y nos pondremos en contacto para confirmar su cita.</p>
+            
+            <form id="formTurno" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium mb-1 text-gray-700">Nombre Completo</label>
+                        <input type="text" id="nombreCliente" required class="w-full border border-gray-300 rounded p-2.5 text-sm focus:outline-none focus:border-gold-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1 text-gray-700">Correo Electrónico</label>
+                        <input type="email" id="emailCliente" required class="w-full border border-gray-300 rounded p-2.5 text-sm focus:outline-none focus:border-gold-500">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium mb-1 text-gray-700">Teléfono / WhatsApp</label>
+                        <input type="tel" id="telCliente" required class="w-full border border-gray-300 rounded p-2.5 text-sm focus:outline-none focus:border-gold-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1 text-gray-700">Motivo de Consulta</label>
+                        <select id="motivoCliente" class="w-full border border-gray-300 rounded p-2.5 text-sm focus:outline-none focus:border-gold-500">
+                            <option value="Escritura / Compraventa">Escritura / Compraventa</option>
+                            <option value="Poderes / Autorizaciones">Poderes / Autorizaciones</option>
+                            <option value="Testamentos / Sucesiones">Testamentos / Sucesiones</option>
+                            <option value="Asesoramiento General">Asesoramiento General</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-1 text-gray-700">Comentarios Adicionales</label>
+                    <textarea id="comentariosCliente" rows="3" class="w-full border border-gray-300 rounded p-2.5 text-sm focus:outline-none focus:border-gold-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-navy-900 hover:bg-navy-800 text-white font-semibold p-3 rounded transition text-sm">Enviar Solicitud de Cita</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer (Limpio, sin rastros administrativos) -->
+    <footer class="bg-navy-900 text-gray-400 py-12 text-sm border-t border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h4 class="text-white font-serif text-lg mb-3">Escribanía Notarial</h4>
+                <p class="text-xs leading-relaxed">Brindando seguridad jurídica con respaldo profesional y excelencia institucional.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-serif text-lg mb-3">Horarios de Atención</h4>
+                <p class="text-xs">Lunes a Viernes: 09:00 - 17:00 hs</p>
+                <p class="text-xs">Sábados y Domingos: Cerrado</p>
+            </div>
+            <div>
+                <h4 class="text-white font-serif text-lg mb-3">Contacto</h4>
+                <p class="text-xs mb-1">contacto@escribaniamodelo.com</p>
+                <p class="text-xs">+54 9 3548 000000</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 pt-8 border-t border-gray-800 text-center text-xs">
+            &copy; 2026 Escribanía Modelo. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        function calcularArancel() {
+            const tipo = document.getElementById('tipoTramite').value;
+            const monto = parseFloat(document.getElementById('montoActo').value) || 0;
+            let total = 0;
+
+            if (tipo === 'escritura') {
+                total = monto * 0.02 + 45000;
+            } else if (tipo === 'poder') {
+                total = 25000;
+            } else {
+                total = 12000;
+            }
+
+            document.getElementById('montoTotal').innerText = '$ ' + total.toLocaleString('es-AR');
+            document.getElementById('resultadoCalculo').classList.remove('hidden');
+        }
+
+        // Envía el turno al localStorage de manera silenciosa
+        document.getElementById('formTurno').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nuevoTurno = {
+                id: Date.now(),
+                nombre: document.getElementById('nombreCliente').value,
+                email: document.getElementById('emailCliente').value,
+                telefono: document.getElementById('telCliente').value,
+                motivo: document.getElementById('motivoCliente').value,
+                estado: 'Pendiente'
+            };
+
+            let turnos = JSON.parse(localStorage.getItem('turnosEscribania')) || [];
+            turnos.push(nuevoTurno);
+            localStorage.setItem('turnosEscribania', JSON.stringify(turnos));
+
+            alert('¡Turno solicitado con éxito! Nos comunicaremos a la brevedad.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
